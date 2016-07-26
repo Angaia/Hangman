@@ -1,4 +1,4 @@
-var words = ['cacas', 'cocotero', 'fliskis']
+var words = ['code', 'develop', 'lidia']
 
 var decomMaxIndex = words.length-1;
 var decomRandomIndex = Math.floor(Math.random() * (decomMaxIndex + 1));
