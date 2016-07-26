@@ -1,5 +1,10 @@
-var words = ['code', 'develop', 'lidia']
+//This is the classic Hangman game
+//You have to guess the word in a limited number of turns
 
+
+//Words to solve
+var words = ['code', 'develop', 'lidia']
+//Randomize them
 var decomMaxIndex = words.length-1;
 var decomRandomIndex = Math.floor(Math.random() * (decomMaxIndex + 1));
 var word = words[decomRandomIndex].split("");
@@ -31,14 +36,14 @@ $('.submit').click( function (event){
 	submit();
 });
 
-// Get new
+// Get new word
 function newWord () {
 	for (var i = 0; i < word.length; i++) {
 		wordHidden.push("-");
 	}
 	$('#word').html(wordHidden);
 }
-// Submit AND see what happens 
+// Submit AND check if it's correct 
 function submit (){
 	var used = $('input').val();
 		usedLetters.push(used);
@@ -84,6 +89,3 @@ function lose (){
 	$('.hangman').prepend('<h2>YOU LOSE!!!</h2>');
 	$('#word').html(word);
 }
-
-
-
