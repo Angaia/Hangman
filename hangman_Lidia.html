@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hangman - Lidia</title>
+	<link rel="stylesheet" type="text/css" href="css/custom.css">
+ 	<meta charset="utf-8">
+ 	<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>  
+ 	<link href="css/bootstrap.min.css" rel="stylesheet">
+ 	<script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+	<div id="word">
+		palabra
+	</div>
+
+	<form>
+		<input placeholder="Type letter or the solution">
+		<button class="submit">Submit</button>
+		<button class="new">New word</button>
+		<button class="surrender">Surrender</button>
+	</form>
+
+	<div class="fails">
+		<h3>You've failed these times:</h3><span><div class="failsNumber"></div></span>
+	</div>
+
+	<div>
+		<h3>Used letters:</h3>
+		<ul class = "used"></ul>
+	</div>
+
+	<div class="hangman"><img src="hangman_smilie/smilie_hangman-01.png"></div>
+
+
+</body>
+
+<script src="js/custom.js"></script>
+</html>
